@@ -5,5 +5,59 @@
 # ********************************************************************
 
 ui <- fluidPage(
-  titlePanel("Alpha Centauri")
-)
+
+  titlePanel("Alpha Centauri"),
+  p("Shiny R Application Template"),
+  hr(),
+
+  sidebarLayout(
+    sidebarPanel(
+
+      # Plot ctrl.
+      conditionalPanel(
+        condition = "input.tab === 'Plot'",
+        helpText("Select plot values"),
+        selectInput("x_axis", label = "X Axis",
+          choices = c("Col 1" = "c1",
+                      "Col 2" = "c2",
+                      "Col 3" = "c3")),
+        selectInput("y_axis", label = "Y Axis",
+          choices = c("Col 1" = "c1",
+                      "Col 2" = "c2",
+                      "Col 3" = "c3"))
+      ), # Plot ctrl.
+
+      # Table ctrl.
+      conditionalPanel(
+        condition = "input.tab === 'Table'",
+        helpText("Adjust filter options"),
+        sliderInput("filter", label = "Select range for Col 1",
+          min = 0, max = 100, value = c(15, 45))
+      ), # Table ctrl.
+
+    ), # sidebarPanel
+
+    mainPanel(
+      tabsetPanel(id = "tab",
+
+        # Plot
+        tabPanel("Plot",
+          div(style = "height:16px"),
+          plotOutput("plot")
+        ), # Plot
+
+        # Table
+        tabPanel("Table",
+          div(style = "height:16px"),
+          dataTableOutput("table")
+        ), # Table
+
+      ) # tabsetPanel
+    ) # mainPanel
+  ), # sidebarLayout
+
+  hr(),
+  p("(C) 2022 Nenad Trajkovic", style = "text-align:center; color:gray"),
+  div(style = "height:16px")
+
+) # fluidPage
