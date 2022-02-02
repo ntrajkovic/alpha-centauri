@@ -8,6 +8,8 @@ source("about-modal.R")
 
 ui <- fluidPage(
 
+  includeCSS("alpha-centauri.css"),
+
   titlePanel("Alpha Centauri"),
   p("Shiny R Application Template"),
   hr(),
@@ -38,9 +40,7 @@ ui <- fluidPage(
       ), # Table ctrl.
 
       # About app.
-      actionLink("about", HTML("Alpha Centauri &#9830; About"),
-        style = "display: block; text-align: center; color:gray;
-                 text-decoration: none")
+      actionLink("about", HTML("Alpha Centauri &#9830; About"))
 
     ), # sidebarPanel
 
@@ -49,13 +49,11 @@ ui <- fluidPage(
 
         # Plot
         tabPanel("Plot",
-          div(style = "height:16px"),
           plotOutput("plot")
         ), # Plot
 
         # Table
         tabPanel("Table",
-          div(style = "height:16px"),
           dataTableOutput("table")
         ), # Table
 
@@ -64,9 +62,6 @@ ui <- fluidPage(
   ), # sidebarLayout
 
   hr(),
-  actionLink("copy", HTML("&copy; 2022 Nenad Trajkovic"),
-    style = "display: block; text-align: center; color: grey;
-             text-decoration: none"),
-  div(style = "height:16px")
+  actionLink("copy", HTML("&copy; 2022 Nenad Trajkovic"))
 
 ) # fluidPage

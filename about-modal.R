@@ -5,15 +5,14 @@
 # ********************************************************************
 
 about_modal <- modalDialog(
-  title = "About ...",
-  div(style = "text-align: center",
-    h4("Alpha Centauri", style = "font-weight: bold"),
+  title = "About",
+  div(id = "about-content",
+    h4("Alpha Centauri"),
     p("v 1.0"),
     p("Author: Nenad Trajkovic"),
     p("Alpha Centauri is a Shiny R application template meant to provide
        a skeleton and thus ease the starting process of writing Shiny R
-       applications.",
-       style = "margin-left: 64px; margin-right: 64px; text-align: justify"),
+       applications.", id = "about-description"),
     p(a("MIT License", href = "https://choosealicense.com/licenses/mit/",
        title = "Show MIT License information", target = "_blank")),
     p(HTML("&copy; 2022 Nenad Trajkovic"))
