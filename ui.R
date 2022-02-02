@@ -4,6 +4,8 @@
 # (C) 2022 Nenad Trajkovic, MIT License
 # ********************************************************************
 
+source("about-modal.R")
+
 ui <- fluidPage(
 
   titlePanel("Alpha Centauri"),
@@ -35,6 +37,11 @@ ui <- fluidPage(
           min = 0, max = 100, value = c(15, 45))
       ), # Table ctrl.
 
+      # About app.
+      actionLink("about", HTML("Alpha Centauri &#9830; About"),
+        style = "display: block; text-align: center; color:gray;
+                 text-decoration: none")
+
     ), # sidebarPanel
 
     mainPanel(
@@ -57,7 +64,9 @@ ui <- fluidPage(
   ), # sidebarLayout
 
   hr(),
-  p("(C) 2022 Nenad Trajkovic", style = "text-align:center; color:gray"),
+  actionLink("copy", HTML("&copy; 2022 Nenad Trajkovic"),
+    style = "display: block; text-align: center; color: grey;
+             text-decoration: none"),
   div(style = "height:16px")
 
 ) # fluidPage
