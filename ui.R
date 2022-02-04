@@ -21,22 +21,22 @@ ui <- fluidPage(
       conditionalPanel(
         condition = "input.tab === 'Plot'",
         helpText("Select plot values"),
-        selectInput("x_axis", label = "X Axis",
-          choices = c("Col 1" = "c1",
-                      "Col 2" = "c2",
-                      "Col 3" = "c3")),
-        selectInput("y_axis", label = "Y Axis",
-          choices = c("Col 1" = "c1",
-                      "Col 2" = "c2",
-                      "Col 3" = "c3"))
+        varSelectInput("x_axis", label = "X Axis",
+          data = iris, selected = "Petal.Length"),
+        varSelectInput("y_axis", label = "Y Axis",
+          data = iris, selected = "Sepal.Length"),
+        varSelectInput("color", label = "Color",
+          data = iris, selected = "Species")
       ), # Plot ctrl.
 
       # Table ctrl.
       conditionalPanel(
         condition = "input.tab === 'Table'",
         helpText("Adjust filter options"),
-        sliderInput("filter", label = "Select range for Col 1",
-          min = 0, max = 100, value = c(15, 45))
+        sliderInput("filter", label = "Select range for Sepal.Length",
+          min = min(iris$Sepal.Length),
+          max = max(iris$Sepal.Length),
+          value = range(iris$Sepal.Length))
       ), # Table ctrl.
 
       # About app.
