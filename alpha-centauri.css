@@ -1,0 +1,38 @@
+/*********************************************************************
+ * alpha-centauri.css
+ * Custom styles for Alpha Centauri application template
+ * (C) 2022 Nenad Trajkovic, MIT License
+ *********************************************************************/
+
+html {
+  overflow-y: scroll; /* Always show scroll bar */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+#about, #copy {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: grey;
+}
+
+#plot, #table {
+  margin-top: 16px;
+}
+
+#copy {
+  margin-bottom: 16px;
+}
+
+#about-content {
+  text-align: center;
+}
+
+#about-description {
+  margin-left: 64px;
+  margin-right: 64px;
+  text-align: justify;
+}
