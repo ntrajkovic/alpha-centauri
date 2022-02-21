@@ -28,6 +28,22 @@ The goal of the project is to override the first shock of ugly and weird Shiny R
             Alpha Centauri Mobile</a>
 </table>
 
+## Developer's Notes
+
+Add Features tab with an example:
+- Image
+- Formatting table
+- Math formula
+- File control to upload Excel file and show it in a table
+
+Features tab should be a separate logical section that presents additional utility options that one can use to upgrade the basic functionality of the Alpha Centauri template.
+
+Add Plot button "Download as PNG".
+
+Add Table buttons "Download as Excel" and "Download as CSV".
+
+Add Features tab buttons "Download as PDF" and "Download as Word".
+
 ## License
 This project is licensed under [MIT License](LICENSE "Read the LICENSE file").
 
