@@ -1,6 +1,12 @@
 # Alpha Centauri
 Shiny R application template
 
+## General Notes
+
+Alpha Centauri is a Shiny R application template meant to provide a skeleton and thus ease the starting process of writing Shiny R applications. The skeleton is very simple and provides a sidebar layout with conditional controls for basic plot and table. About dialog, copyright notice, and license information, are also available.
+
+The goal of the project is to override the first shock of ugly and weird Shiny R language syntax, the absence of well-adopted standards, and non-consistent examples in documentation (this is how Shiny R looks at first glance). In contrast, Alpha Centauri is a well-founded and universal template, on top of which one can easily build many simple and useful dataset dashboards.
+
 ## Screenshots
 
 <table>
