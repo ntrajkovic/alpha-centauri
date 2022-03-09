@@ -11,22 +11,18 @@ The goal of the project is to override the first shock of ugly and weird R langu
 ## Screenshots
 
 <table>
-  <thead>
-    <tr> <th> Plot <th> Table <th> About <th> Mobile
   <tbody>
     <tr valign="top">
-      <td><a href="screenshots/alpha-centauri-plot.png" title="Open image">
-            <img src="screenshots/alpha-centauri-plot.png"><br>
-            Alpha Centauri Plot</a>
-      <td><a href="screenshots/alpha-centauri-table.png" title="Open image">
-            <img src="screenshots/alpha-centauri-table.png"><br>
-            Alpha Centauri Table</a>
-      <td><a href="screenshots/alpha-centauri-about.png" title="Open image">
-            <img src="screenshots/alpha-centauri-about.png"><br>
-            Alpha Centauri About</a>
-      <td><a href="screenshots/alpha-centauri-mobile.png" title="Open image">
-            <img src="screenshots/alpha-centauri-mobile.png"><br>
-            Alpha Centauri Mobile</a>
+      <td><a href="screenshots/alpha-centauri-plot.png?raw=true" title="Open image">
+          <img src="screenshots/alpha-centauri-plot.png"><br>Plot</a><br><br>
+          <a href="screenshots/alpha-centauri-filter.png?raw=true" title="Open image">
+          <img src="screenshots/alpha-centauri-filter.png"><br>Filter</a>
+      <td><a href="screenshots/alpha-centauri-table.png?raw=true" title="Open image">
+          <img src="screenshots/alpha-centauri-table.png"><br>Table</a>
+      <td><a href="screenshots/alpha-centauri-about.png?raw=true" title="Open image">
+          <img src="screenshots/alpha-centauri-about.png"><br>About</a>
+      <td><a href="screenshots/alpha-centauri-mobile.png?raw=true" title="Open image">
+          <img src="screenshots/alpha-centauri-mobile.png"><br>Alpha Centauri Mobile</a>
 </table>
 
 ## Developer's Notes
